@@ -15,3 +15,5 @@ mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         //
     ]);
+// mix.js('resources/js/app.js', 'public/js').vue()  //vue() 追記
+//    .sass('resources/sass/app.scss', 'public/css');
