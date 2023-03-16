@@ -25,4 +25,4 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/delete/{id}', [App\Http\Controllers\HomeController::class, 'delete'])->name('delete');
 });
 
-Route::get('/logout', 'Auth\LoginController@logout');
+Route::get('/logout', 'Auth\LoginController@postlogout')->name('postlogout');
