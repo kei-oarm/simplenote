@@ -23,6 +23,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/edit/{id}', [App\Http\Controllers\HomeController::class, 'edit'])->name('edit');
     Route::post('/update/{id}', [App\Http\Controllers\HomeController::class, 'update'])->name('update');
     Route::post('/delete/{id}', [App\Http\Controllers\HomeController::class, 'delete'])->name('delete');
+    Route::get('/logout', 'Auth\LoginController@postlogout')->name('postlogout');
 });
-
-Route::get('/logout', 'Auth\LoginController@postlogout')->name('postlogout');
